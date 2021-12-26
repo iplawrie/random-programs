@@ -63,7 +63,7 @@ class Ball{
   }
   
   boolean within(int checkX, int checkY){
-    if( Math.sqrt((x-checkX)*(x-checkX) + (y-checkY)*(y-checkY)) < r+1){
+    if( Math.sqrt((x-checkX)*(x-checkX) + (y-checkY)*(y-checkY)) <= r){
       return true;
     }
     return false;
