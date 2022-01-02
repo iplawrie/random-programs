@@ -1,7 +1,7 @@
 import math
 
 listOfBalls = []
-r = 100
+r = 50
 colors = [0, 255]
 boxWidth = 1500
 boxHeight = 1500
@@ -13,7 +13,7 @@ def setup():
     listOfBalls.append(Ball(int(random(boxWidth-r)), int(random(boxHeight-r)), r))
     
 def draw():
-    for i in range(10000):
+    for i in range(100):
         ranX = int(random(boxWidth))
         ranY = int(random(boxHeight))
         for index in range(len(listOfBalls)):
@@ -28,7 +28,7 @@ def withinBox(x, y, radius):
         return True
     return False
 
-class Ball(object):
+class Ball():
     def __init__(self, x, y, radius):
         self.x = x
         self.y = y

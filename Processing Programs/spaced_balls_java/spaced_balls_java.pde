@@ -16,7 +16,7 @@ void setup(){
 }
 
 void draw(){
-  for(int x = 0; x < 1000; x++){
+  for(int x = 0; x < 10000; x++){
     int r1 = int(random(boxWidth));
     int r2 = int(random(boxHeight));
     for( int i = 0; i < arraySize; i++){
